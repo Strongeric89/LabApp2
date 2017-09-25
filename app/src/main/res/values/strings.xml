@@ -2,6 +2,8 @@
     <string name="app_name">LabApp2</string>
 
     <string name="hello_world">Hello Eric Strong!</string>
-    <string name="click_me">Please Click me!</string>
+    <string name="click_me">Click me!</string>
+    <string name="time">What time is it?</string>
     <string name="action_settings">Settings</string>
+
 </resources>

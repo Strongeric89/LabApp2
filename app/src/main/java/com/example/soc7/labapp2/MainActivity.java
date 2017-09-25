@@ -1,16 +1,24 @@
 package com.example.soc7.labapp2;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+import android.os.Vibrator;
+import java.util.Date;
 
 public class MainActivity extends Activity {
 
+    private TextView text1 = null;
+    private EditText edit1 = null;
     private Button btn1 = null;
+    private Button btn2 = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +26,8 @@ public class MainActivity extends Activity {
 
         setContentView(R.layout.activity_main);
 
+        text1 = (TextView) findViewById(R.id.textView);
+        edit1 = (EditText) findViewById(R.id.editMe);
         btn1 = (Button) findViewById(R.id.clickMeBtn);
         //when button clicked
 
@@ -25,8 +35,45 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "OUCH!!! You clicked me!!",
                         Toast.LENGTH_LONG).show();
+
+
+                //change the text in the editText
+                String edited = String.valueOf(edit1.getText());
+                text1.setText(edited);
+
+
+
+                Vibrator v = (Vibrator) MainActivity.this.getSystemService(Context.VIBRATOR_SERVICE);
+                v.vibrate(500);
             }
         });
+
+
+
+        btn2 = (Button) findViewById(R.id.time);
+        //when button clicked
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                Date now = new Date();
+                String s = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+                btn2.setText(s);
+
+                Vibrator v = (Vibrator) MainActivity.this.getSystemService(Context.VIBRATOR_SERVICE);
+                v.vibrate(500);
+
+            }
+        });
+
+
+
+
+
+
+
+
+
 
 
     }//end on Create
@@ -58,4 +105,4 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
-}
+}//end main Activity
