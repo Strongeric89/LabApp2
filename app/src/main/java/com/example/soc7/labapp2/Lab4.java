@@ -33,7 +33,6 @@ public class Lab4 extends Activity implements View.OnClickListener {
     private RadioGroup g2 = null;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,8 +40,6 @@ public class Lab4 extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_lab4);
 
         // setting the orientation
-
-
         rbH = (RadioButton) findViewById(R.id.horizontal);
         rbH.setOnClickListener(this);
         rbV = (RadioButton) findViewById(R.id.vertical);
@@ -54,13 +51,6 @@ public class Lab4 extends Activity implements View.OnClickListener {
         rbR = (RadioButton) findViewById(R.id.right);
         rbR.setOnClickListener(this);
 
-
-
-
-
-
-
-
     }//end onCreate
 
 
@@ -69,21 +59,17 @@ public class Lab4 extends Activity implements View.OnClickListener {
         RadioGroup g1 = (RadioGroup) findViewById(orientation);
         RadioGroup g2 = (RadioGroup) findViewById(R.id.gravity);
 
+
         switch (view.getId()) {
 
 
             case R.id.horizontal:
                 g1.setOrientation(LinearLayout.HORIZONTAL);
-
-
-
-
                 Toast.makeText(Lab4.this, "Horizontal!", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.vertical:
                 g1.setOrientation(LinearLayout.VERTICAL);
-
                 Toast.makeText(Lab4.this, "Vertical!", Toast.LENGTH_SHORT).show();
                 break;
 
@@ -96,7 +82,7 @@ public class Lab4 extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.center:
-                rbC.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                rbC.setGravity(Gravity.CENTER);
                 rbL.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
                 rbR.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
                 Toast.makeText(Lab4.this, "Center!", Toast.LENGTH_SHORT).show();

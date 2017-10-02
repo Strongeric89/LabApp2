@@ -44,15 +44,18 @@
         android:layout_height="wrap_content"
         android:padding="5px">
 
-        <RadioButton
-            android:id="@+id/left"
-            android:text="left"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
 
 
 
-            />
+
+            <RadioButton
+                android:id="@+id/left"
+                android:text="left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+
+
 
         <RadioButton
             android:id="@+id/center"
@@ -63,12 +66,15 @@
 
             />
 
-        <RadioButton
-            android:id="@+id/right"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="right"
 
-            />
+            <RadioButton
+        android:id="@+id/right"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="right"
+
+        />
+
+
     </RadioGroup>
 </LinearLayout>
