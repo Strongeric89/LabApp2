@@ -23,7 +23,7 @@ public class MainPage extends Activity {
 
         setContentView(R.layout.activity_main_page);
 
-        //create intent to lab2
+        //create intent to lab1
         lab1 = (Button) findViewById(R.id.goToLab1);
 
         lab1.setOnClickListener(new View.OnClickListener(){
@@ -42,6 +42,19 @@ public class MainPage extends Activity {
         lab2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent i = new Intent(view.getContext(),Lab2.class);
+                //switch over to lab1 class
+                startActivity(i);
+
+            }
+        });
+
+
+        //create intent to lab3
+        lab3 = (Button) findViewById(R.id.goToLab3);
+
+        lab3.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent i = new Intent(view.getContext(),Lab3.class);
                 //switch over to lab1 class
                 startActivity(i);
 

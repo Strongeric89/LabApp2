@@ -3,4 +3,22 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:text="Not Checked" />
+
+    <ImageView
+        android:id="@+id/imageBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@color/skyBlue"
+
+        />
+
+
 </LinearLayout>
