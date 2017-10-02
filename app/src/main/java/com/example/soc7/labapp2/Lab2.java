@@ -13,7 +13,7 @@ import android.widget.Toast;
 import android.os.Vibrator;
 import java.util.Date;
 
-public class MainActivity extends Activity {
+public class Lab2 extends Activity {
 
     private TextView text1 = null;
     private EditText edit1 = null;
@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lab2);
 
         text1 = (TextView) findViewById(R.id.textView);
         edit1 = (EditText) findViewById(R.id.editMe);
@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 
         btn1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "OUCH!!! You clicked me!!",
+                Toast.makeText(Lab2.this, "OUCH!!! You clicked me!!",
                         Toast.LENGTH_LONG).show();
 
 
@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
 
 
 
-                Vibrator v = (Vibrator) MainActivity.this.getSystemService(Context.VIBRATOR_SERVICE);
+                Vibrator v = (Vibrator) Lab2.this.getSystemService(Context.VIBRATOR_SERVICE);
                 v.vibrate(500);
             }
         });
@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
                 String s = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
                 btn2.setText(s);
 
-                Vibrator v = (Vibrator) MainActivity.this.getSystemService(Context.VIBRATOR_SERVICE);
+                Vibrator v = (Vibrator) Lab2.this.getSystemService(Context.VIBRATOR_SERVICE);
                 v.vibrate(500);
 
             }
