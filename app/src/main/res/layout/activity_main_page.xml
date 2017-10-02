@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="3">
+    android:weightSum="4">
 
 
     <Button
@@ -27,13 +27,23 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/goToLab3"
+    android:id="@+id/goToLab3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/blue"
+    android:text="Checkbox app"
+    android:textColor="@color/white"
+    android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/goToLab4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/blue"
-        android:text="Checkbox app"
-        android:textColor="@color/white"
+        android:background="@color/yellow"
+        android:text="Radio Buttons"
+        android:textColor="@color/black"
         android:textSize="30sp" />
 
 

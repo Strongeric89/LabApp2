@@ -15,6 +15,8 @@ public class MainPage extends Activity {
     private Button lab1 = null;
     private Button lab2 = null;
     private Button lab3 = null;
+    private Button lab4 = null;
+
 
 
     @Override
@@ -60,6 +62,20 @@ public class MainPage extends Activity {
 
             }
         });
+
+
+        //create intent to lab4
+        lab4 = (Button) findViewById(R.id.goToLab4);
+
+        lab4.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent i = new Intent(view.getContext(),Lab4.class);
+                //switch over to lab1 class
+                startActivity(i);
+
+            }
+        });
+
 
     }//end onCreate
 
