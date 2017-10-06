@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="4">
+    android:weightSum="5">
 
 
     <Button
@@ -44,6 +44,16 @@
         android:background="@color/yellow"
         android:text="Radio Buttons"
         android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/goToLab5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/grey"
+        android:text="Intents"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
 

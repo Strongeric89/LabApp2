@@ -21,6 +21,8 @@
         <activity android:name=".Lab2" />
         <activity android:name=".Lab3" />
         <activity android:name=".Lab4" />
+        <activity android:name=".Lab5a" />
+        <activity android:name=".Lab5b" />
     </application>
 
 </manifest>
