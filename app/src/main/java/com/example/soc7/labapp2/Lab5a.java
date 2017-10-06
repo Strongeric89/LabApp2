@@ -37,6 +37,7 @@ public class Lab5a extends Activity{
 
                 Intent i = new Intent(view.getContext(),Lab5b.class);
                 //switch over to lab5b class
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // THIS LINE STOPS AN INTENT CHAIN FROM OCCURING
                 startActivity(i);
 
 

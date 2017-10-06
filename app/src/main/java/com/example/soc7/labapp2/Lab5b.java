@@ -38,6 +38,7 @@ public class Lab5b extends Activity{
 
                 Intent i = new Intent(view.getContext(),Lab5a.class);
                 //switch over to lab5a class
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // THIS LINE STOPS AN INTENT CHAIN FROM OCCURING
                 startActivity(i);
 
                 Toast.makeText(Lab5b.this, "you clicked Green Button!!",
