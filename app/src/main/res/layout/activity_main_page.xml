@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="6">
+    android:weightSum="7">
 
 
     <Button
@@ -63,6 +63,16 @@
         android:layout_weight="1"
         android:background="@color/grey"
         android:text="Intents"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/goToLab5c"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/purple"
+        android:text="Layouts"
         android:textColor="@color/white"
         android:textSize="30sp" />
 

@@ -24,6 +24,7 @@
         <activity android:name=".Lab4" />
         <activity android:name=".Lab5a" />
         <activity android:name=".Lab5b" />
+        <activity android:name=".Lab5c" />
     </application>
 
 </manifest>
