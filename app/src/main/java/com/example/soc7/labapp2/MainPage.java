@@ -14,6 +14,7 @@ public class MainPage extends Activity {
 
     private Button lab1 = null;
     private Button lab2 = null;
+    private Button lab2b = null;
     private Button lab3 = null;
     private Button lab4 = null;
     private Button lab5 = null;
@@ -45,6 +46,18 @@ public class MainPage extends Activity {
         lab2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent i = new Intent(view.getContext(),Lab2.class);
+                //switch over to lab1 class
+                startActivity(i);
+
+            }
+        });
+
+        //create intent to lab2
+        lab2b = (Button) findViewById(R.id.goToLab2b);
+
+        lab2b.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent i = new Intent(view.getContext(),Lab2b.class);
                 //switch over to lab1 class
                 startActivity(i);
 

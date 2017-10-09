@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="5">
+    android:weightSum="6">
 
 
     <Button
@@ -23,6 +23,16 @@
         android:layout_weight="1"
         android:background="@color/red"
         android:text="TimeApp"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/goToLab2b"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/orange"
+        android:text="on key listeners"
         android:textColor="@color/white"
         android:textSize="30sp" />
 
