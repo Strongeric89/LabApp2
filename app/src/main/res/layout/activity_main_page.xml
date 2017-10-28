@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="7">
+    android:weightSum="8">
 
 
     <Button
@@ -75,6 +75,17 @@
         android:text="Layouts"
         android:textColor="@color/white"
         android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/goToLab6a"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/blue"
+        android:text="Lists"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
 
 
 
