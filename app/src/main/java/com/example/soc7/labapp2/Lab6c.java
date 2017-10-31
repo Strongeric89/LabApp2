@@ -14,9 +14,10 @@ import android.widget.Toast;
 public class Lab6c extends Activity {
 
     public  Movie movieList[] = {
-        new Movie("The Dark Knight Rises", "batman returns with epic battle against bane","image4"),
-        new Movie("The Dark Knight", "Batman fights the joker", "image4"),
-        new Movie("Batman Begins", "Batman fights RasAlgul", "image4")
+            new Movie("Batman Begins", "Batman fights Ras'Algul and Scarecrow", "bt1"),
+            new Movie("The Dark Knight", "Batman fights the Joker and TwoFace", "dk1"),
+            new Movie("The Dark Knight Rises", "batman returns with epic battle against Bane and Catwoman","dkr1")
+
     };
 
     private ListView myListView = null;
@@ -52,10 +53,5 @@ public class Lab6c extends Activity {
 
 
     }
-
-//    public boolean onCreateOptionsMenu(Menu menu){
-//        getMenuInflater().inflate(R.menu.,menu);
-//        return true;
-//    }
 
 }
