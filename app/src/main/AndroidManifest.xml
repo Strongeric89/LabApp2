@@ -27,6 +27,7 @@
         <activity android:name=".Lab5b" />
         <activity android:name=".Lab5c" />
         <activity android:name=".Lab6a" />
+        <activity android:name=".Lab6c" />
 
         <activity
             android:name=".Lab6b"
