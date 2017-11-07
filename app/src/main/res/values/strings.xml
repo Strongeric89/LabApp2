@@ -6,5 +6,6 @@
     <string name="time">What time is it?</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_lab6b">Lab6b</string>
+    <string name="title_activity_web_scrape">webScrape</string>
 
 </resources>

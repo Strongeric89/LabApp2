@@ -21,6 +21,8 @@ public class MainPage extends Activity {
     private Button lab5c = null;
     private Button lab6a = null;
     private Button lab6c = null;
+    private Button lab7 = null;
+    private Button webscrape = null;
 
 
 
@@ -137,6 +139,29 @@ public class MainPage extends Activity {
         lab6c.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent i = new Intent(view.getContext(),Lab6c.class);
+
+                startActivity(i);
+
+            }
+        });
+
+
+        lab7 = (Button) findViewById(R.id.goToLab7);
+
+        lab7.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent i = new Intent(view.getContext(),Lab7.class);
+
+                startActivity(i);
+
+            }
+        });
+
+        webscrape = (Button) findViewById(R.id.goToWebScrape);
+
+        webscrape.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent i = new Intent(view.getContext(),webScrape.class);
                 //switch over to lab5 class
                 startActivity(i);
 

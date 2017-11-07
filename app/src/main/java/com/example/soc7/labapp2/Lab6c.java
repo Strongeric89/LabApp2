@@ -21,7 +21,7 @@ public class Lab6c extends Activity {
     };
 
     private ListView myListView = null;
-    private MovieAdapter movieAdapter = null;
+       private MovieAdapter movieAdapter = null;
 
 
     @Override

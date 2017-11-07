@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="9">
+    android:weightSum="11">
 
 
     <Button
@@ -94,6 +94,27 @@
         android:background="@color/white"
         android:text="Custom Lists"
         android:textColor="@color/blue"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/goToLab7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/blue"
+        android:text="SQLite"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/goToWebScrape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/yellow"
+        android:text="WebScrape"
+        android:textColor="@color/red"
         android:textSize="30sp" />
 
 

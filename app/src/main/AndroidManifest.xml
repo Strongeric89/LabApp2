@@ -3,6 +3,7 @@
     package="com.example.soc7.labapp2">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -28,15 +29,19 @@
         <activity android:name=".Lab5c" />
         <activity android:name=".Lab6a" />
         <activity android:name=".Lab6c" />
-
+        <activity android:name=".Lab7"></activity>
         <activity
             android:name=".Lab6b"
             android:label="Lab6b">
             <intent-filter>
-                <action android:name="com.example.soc7.labapp2"/>
+                <action android:name="com.example.soc7.labapp2" />
+
                 <category android:name="android.intent.category.DEFAULT" />
-           </intent-filter>
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".webScrape"
+            android:label="@string/title_activity_web_scrape" />
 
     </application>
 
