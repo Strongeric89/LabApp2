@@ -30,6 +30,7 @@
         <activity android:name=".Lab6a" />
         <activity android:name=".Lab6c" />
         <activity android:name=".Lab7"></activity>
+        <activity android:name=".Lab8"></activity>
         <activity
             android:name=".Lab6b"
             android:label="Lab6b">

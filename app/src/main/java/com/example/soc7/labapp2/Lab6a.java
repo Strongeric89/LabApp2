@@ -25,7 +25,7 @@ public class Lab6a extends Activity {
 
 
         setContentView(R.layout.activity_lab6a); // set layout
-        ListView taskListView = (ListView) findViewById(R.id.task_list);
+        ListView taskListView = findViewById(R.id.task_list);
 
         //array of my favorite movies
         ArrayAdapter adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, array);

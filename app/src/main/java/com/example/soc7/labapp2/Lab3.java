@@ -28,11 +28,11 @@ public class Lab3 extends Activity {
 
         setContentView(R.layout.activity_lab3);
 
-        bgImage = (ImageView) findViewById(R.id.imageBG);
+        bgImage = findViewById(R.id.imageBG);
         bgImage.setImageResource(R.drawable.image2);
 
 
-        checkbox = (CheckBox) findViewById(R.id.checkBox);
+        checkbox = findViewById(R.id.checkBox);
         checkbox.setChecked(false);
 
         checkbox.setOnClickListener(new View.OnClickListener() {

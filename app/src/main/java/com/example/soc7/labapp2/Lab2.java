@@ -26,9 +26,9 @@ public class Lab2 extends Activity {
 
         setContentView(R.layout.activity_lab2);
 
-        text1 = (TextView) findViewById(R.id.textView);
-        edit1 = (EditText) findViewById(R.id.editMe);
-        btn1 = (Button) findViewById(R.id.clickMeBtn);
+        text1 = findViewById(R.id.textView);
+        edit1 = findViewById(R.id.editMe);
+        btn1 = findViewById(R.id.clickMeBtn);
         //when button clicked
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +50,7 @@ public class Lab2 extends Activity {
 
 
 
-        btn2 = (Button) findViewById(R.id.time);
+        btn2 = findViewById(R.id.time);
         //when button clicked
 
         btn2.setOnClickListener(new View.OnClickListener() {

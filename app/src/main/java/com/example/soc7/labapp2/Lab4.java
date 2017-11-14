@@ -40,15 +40,15 @@ public class Lab4 extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_lab4);
 
         // setting the orientation
-        rbH = (RadioButton) findViewById(R.id.horizontal);
+        rbH = findViewById(R.id.horizontal);
         rbH.setOnClickListener(this);
-        rbV = (RadioButton) findViewById(R.id.vertical);
+        rbV = findViewById(R.id.vertical);
         rbV.setOnClickListener(this);
-        rbL = (RadioButton) findViewById(R.id.left);
+        rbL = findViewById(R.id.left);
         rbL.setOnClickListener(this);
-        rbC = (RadioButton) findViewById(R.id.center);
+        rbC = findViewById(R.id.center);
         rbC.setOnClickListener(this);
-        rbR = (RadioButton) findViewById(R.id.right);
+        rbR = findViewById(R.id.right);
         rbR.setOnClickListener(this);
 
     }//end onCreate
@@ -56,8 +56,8 @@ public class Lab4 extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        RadioGroup g1 = (RadioGroup) findViewById(orientation);
-        RadioGroup g2 = (RadioGroup) findViewById(R.id.gravity);
+        RadioGroup g1 = findViewById(orientation);
+        RadioGroup g2 = findViewById(R.id.gravity);
 
 
         switch (view.getId()) {

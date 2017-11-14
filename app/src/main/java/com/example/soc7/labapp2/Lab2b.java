@@ -27,8 +27,8 @@ public class Lab2b extends Activity {
 
         setContentView(R.layout.activity_lab2b);
 
-        text1 = (TextView) findViewById(R.id.textView);
-        edit1 = (EditText) findViewById(R.id.editMe);
+        text1 = findViewById(R.id.textView);
+        edit1 = findViewById(R.id.editMe);
 
         text = new TextWatcher() {
             @Override

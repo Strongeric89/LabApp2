@@ -36,9 +36,9 @@ public class MovieAdapter extends ArrayAdapter<Movie> {
         LayoutInflater inflater = LayoutInflater.from(mContext);
         row = inflater.inflate(mLayoutResourceId,parent,false);
 
-        TextView titleView = (TextView) row.findViewById(R.id.nameTextView);
-        TextView descView = (TextView) row.findViewById(R.id.descTextView);
-        ImageView imageView = (ImageView) row.findViewById(R.id.imageView);
+        TextView titleView = row.findViewById(R.id.nameTextView);
+        TextView descView = row.findViewById(R.id.descTextView);
+        ImageView imageView = row.findViewById(R.id.imageView);
 
         Movie movie = data[position];
 

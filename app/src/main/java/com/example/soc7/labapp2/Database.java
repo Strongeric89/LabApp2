@@ -2,12 +2,11 @@ package com.example.soc7.labapp2;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
-
 import java.util.ArrayList;
-import java.util.List;
+
 
 /**
  * Created by eric on 14/11/2017.
@@ -64,5 +63,25 @@ public class Database extends SQLiteOpenHelper {
 
 
         db.close();
+    }
+
+    public ArrayList<Task> getTasks(){
+        //retrieves data from database and returns it as an arraylist
+        ArrayList<Task> tasks = new ArrayList<Task>();
+        SQLiteDatabase db = getReadableDatabase();
+
+        String sql = String.format("SELECT %s ,%s, %s FROM %s ORDER BY %s",COLUMN_ID, COLUMN_TASK_NAME, COLUMN_STATUS, TABLE_NAME, COLUMN_ID);
+        Cursor cursor = db.rawQuery(sql,null);
+
+        while(cursor.moveToNext()){
+            int id = cursor.getInt(0);
+            String taskname =  cursor.getString(1);
+            String status = cursor.getString(2);
+
+            tasks.add(new Task(taskname, status));
+        }
+        db.close();
+
+        return tasks;
     }
 }

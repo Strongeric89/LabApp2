@@ -28,7 +28,7 @@ public class Lab7 extends Activity {
     public static ArrayList<Task> taskList = new ArrayList<Task>();
 
     // creates a new database Database
-    private Database db = new Database(this);
+    public Database db = new Database(this);
 
 
     @Override
@@ -38,9 +38,9 @@ public class Lab7 extends Activity {
         setContentView(R.layout.activity_lab7);
 
 
-        taskname = (EditText) findViewById(R.id.taskName);
-        taskstatus = (EditText) findViewById(R.id.taskStatus);
-        addTask = (Button) findViewById(R.id.AddMeBtn);
+        taskname = findViewById(R.id.taskName);
+        taskstatus = findViewById(R.id.taskStatus);
+        addTask = findViewById(R.id.AddMeBtn);
 
         //create a note
         addTask.setOnClickListener(new View.OnClickListener() {

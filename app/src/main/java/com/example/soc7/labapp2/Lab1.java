@@ -25,8 +25,8 @@ public class Lab1 extends Activity {
 
         setContentView(R.layout.activity_lab1);
 
-        text1 = (TextView) findViewById(R.id.textView);
-        btn1 = (Button) findViewById(R.id.clickMeBtn);
+        text1 = findViewById(R.id.textView);
+        btn1 = findViewById(R.id.clickMeBtn);
         //when button clicked
 
         btn1.setOnClickListener(new View.OnClickListener() {

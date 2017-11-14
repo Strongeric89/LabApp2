@@ -30,7 +30,7 @@ public class Lab6c extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab6c);
 
-        myListView = (ListView) findViewById(R.id.myListView);
+        myListView = findViewById(R.id.myListView);
         movieAdapter = new MovieAdapter(getApplicationContext(),R.layout.row,movieList);
 
 

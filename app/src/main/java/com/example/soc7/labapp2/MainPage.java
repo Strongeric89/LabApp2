@@ -22,6 +22,7 @@ public class MainPage extends Activity {
     private Button lab6a = null;
     private Button lab6c = null;
     private Button lab7 = null;
+    private Button lab8 = null;
     private Button webscrape = null;
 
 
@@ -35,7 +36,7 @@ public class MainPage extends Activity {
         setContentView(R.layout.activity_main_page);
 
         //create intent to lab1
-        lab1 = (Button) findViewById(R.id.goToLab1);
+        lab1 = findViewById(R.id.goToLab1);
 
         lab1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -48,7 +49,7 @@ public class MainPage extends Activity {
 
 
         //create intent to lab2
-        lab2 = (Button) findViewById(R.id.goToLab2);
+        lab2 = findViewById(R.id.goToLab2);
 
         lab2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -60,7 +61,7 @@ public class MainPage extends Activity {
         });
 
         //create intent to lab2
-        lab2b = (Button) findViewById(R.id.goToLab2b);
+        lab2b = findViewById(R.id.goToLab2b);
 
         lab2b.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -73,7 +74,7 @@ public class MainPage extends Activity {
 
 
         //create intent to lab3
-        lab3 = (Button) findViewById(R.id.goToLab3);
+        lab3 = findViewById(R.id.goToLab3);
 
         lab3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -86,7 +87,7 @@ public class MainPage extends Activity {
 
 
         //create intent to lab4
-        lab4 = (Button) findViewById(R.id.goToLab4);
+        lab4 = findViewById(R.id.goToLab4);
 
         lab4.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -99,7 +100,7 @@ public class MainPage extends Activity {
 
 
         //create intent to lab5
-        lab5 = (Button) findViewById(R.id.goToLab5);
+        lab5 = findViewById(R.id.goToLab5);
 
         lab5.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -111,7 +112,7 @@ public class MainPage extends Activity {
         });
 
         //create intent to lab5
-        lab5c = (Button) findViewById(R.id.goToLab5c);
+        lab5c = findViewById(R.id.goToLab5c);
 
         lab5c.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -123,7 +124,7 @@ public class MainPage extends Activity {
         });
 
         //create intent to lab6
-        lab6a = (Button) findViewById(R.id.goToLab6a);
+        lab6a = findViewById(R.id.goToLab6a);
 
         lab6a.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -136,7 +137,7 @@ public class MainPage extends Activity {
 
 
 
-        lab6c = (Button) findViewById(R.id.goToLab6c);
+        lab6c = findViewById(R.id.goToLab6c);
 
         lab6c.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -148,7 +149,7 @@ public class MainPage extends Activity {
         });
 
 
-        lab7 = (Button) findViewById(R.id.goToLab7);
+        lab7 = findViewById(R.id.goToLab7);
 
         lab7.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -159,7 +160,18 @@ public class MainPage extends Activity {
             }
         });
 
-        webscrape = (Button) findViewById(R.id.goToWebScrape);
+        lab8 = findViewById(R.id.goToLab8);
+
+        lab8.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent i = new Intent(view.getContext(),Lab8.class);
+
+                startActivity(i);
+
+            }
+        });
+
+        webscrape = findViewById(R.id.goToWebScrape);
 
         webscrape.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){

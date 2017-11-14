@@ -15,7 +15,7 @@ public class Lab6b extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab6b);
 
-        text1 = (TextView) findViewById(R.id.movie1);
+        text1 = findViewById(R.id.movie1);
 
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();

@@ -20,8 +20,8 @@ public class webScrape extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_scrape);
 
-        textview = (TextView) findViewById(R.id.textView4);
-        button1 = (Button) findViewById(R.id.button1);
+        textview = findViewById(R.id.textView4);
+        button1 = findViewById(R.id.button1);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

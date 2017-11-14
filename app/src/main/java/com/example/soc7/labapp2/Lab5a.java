@@ -27,7 +27,7 @@ public class Lab5a extends Activity{
 
 
         setContentView(R.layout.activity_lab5a); // red bg set as default//
-        greenButton = (Button)findViewById(R.id.greenButton);
+        greenButton = findViewById(R.id.greenButton);
 
 
         //set click listeners on each button
