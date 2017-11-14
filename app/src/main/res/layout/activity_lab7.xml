@@ -8,7 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#66ccff"
     android:paddingBottom="@dimen/activity_vertical_margin"
-  >
+    >
 
 
 
@@ -23,41 +23,29 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:text="items from DB"
+    <EditText
+        android:id="@+id/taskStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewSQL"
-        android:fontFamily="serif"
-        android:textStyle="bold"
-        android:textSize="70px"
-
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Task Status"
         android:layout_below="@+id/taskName"
         android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
         android:layout_alignParentEnd="true" />
 
-    <Button
 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="click to add to sqlite"
-        android:onClick="addButtonClicked"
-    android:background="#000000"
-    android:textColor="#ffffff"
-    android:id="@+id/clickMeBtn"
-        android:layout_above="@+id/deleteMeBtn"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="12dp" />
+
 
     <Button
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="click to delete from sqlite"
+        android:text="click to add to sqlite"
         android:background="#000000"
         android:textColor="#ffffff"
-        android:id="@+id/deleteMeBtn"
-        android:onClick="deleteButtonClicked"
+        android:id="@+id/AddMeBtn"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
